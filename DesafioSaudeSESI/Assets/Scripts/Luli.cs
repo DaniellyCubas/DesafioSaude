@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Luli : MonoBehaviour
 {
     public float velh = 5f;
+    public float velv = 7f;
+    public int totalPulos = 1;
+    public int QuantidadePulos = 1;
     private Rigidbody2D meuRB;
     private Animator meuAnim;
 
@@ -21,6 +25,7 @@ public class Luli : MonoBehaviour
     void Update()
     {
         Movendo();
+        Pulando();
     }
 
     private void Movendo()
@@ -41,4 +46,30 @@ public class Luli : MonoBehaviour
         }
     }
 
+    private void Pulando()
+    {
+        Debug.Log("Pulo");
+        var pulo = Input.GetButtonDown("Jump");
+
+        meuAnim.SetBool("NoChao", true);
+
+    if (pulo && QuantidadePulos > 0)
+    {
+        meuRB.velocity = new Vector2(meuRB.velocity.x, velv);
+        QuantidadePulos--;
+
+        //Avisando que estou no chao
+        meuAnim.SetBool("NoChao", false);
+    }
+    
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Colidindo com o chao
+        if (collision.gameObject.CompareTag("chao") )
+        {
+            QuantidadePulos = totalPulos;
+        }
+    }
 }
