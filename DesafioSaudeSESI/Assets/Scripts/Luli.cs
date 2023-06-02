@@ -11,6 +11,8 @@ public class Luli : MonoBehaviour
     public int QuantidadePulos = 1;
     private Rigidbody2D meuRB;
     private Animator meuAnim;
+    private BoxCollider2D boxCol;
+    [SerializeField] private LayerMask layerlevel;
 
 
     // Start is called before the first frame update
@@ -19,6 +21,9 @@ public class Luli : MonoBehaviour
         //Pegando RB
         meuRB = GetComponent<Rigidbody2D>();
         meuAnim = GetComponent<Animator>();
+
+        //Pegando o boxCollider
+        boxCol = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -71,5 +76,14 @@ public class Luli : MonoBehaviour
         {
             QuantidadePulos = totalPulos;
         }
+    }
+
+    //Colisao Raycast
+    private bool IsGrounded()
+    {
+        //Pegando os limites do colisor
+        bool chao = Physics2D.Raycast(boxCol.bounds.center, Vector2.down, 1f, layerlevel);
+        return false;
+
     }
 }

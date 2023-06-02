@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Assets
+    m_Hash: 1048410296
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: https://alkakrab.itch.io/game-piano-music-pack
+      m_Hash: 579272758
+      m_Sprite: {fileID: 0}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 0}
+    - m_Name: https://opengameart.org/content/pink-plataform
+      m_Hash: 700040972
+      m_Sprite: {fileID: 21300000, guid: 6cf6211b760e45f458a549d1d3c3edf1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 6cf6211b760e45f458a549d1d3c3edf1, type: 3}
+    - m_Name: https://elthen.itch.io/2d-pixel-art-cat-sprites
+      m_Hash: 775079193
+      m_Sprite: {fileID: 138403385, guid: f013769e990f45945a70156f4943127d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 138403385, guid: f013769e990f45945a70156f4943127d, type: 3}
+    - m_Name: https://opengameart.org/content/lpc-windows-doors
+      m_Hash: 286027950
+      m_Sprite: {fileID: -1828515082, guid: d62143f8540d12d41b6156ac9b91416c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1828515082, guid: d62143f8540d12d41b6156ac9b91416c, type: 3}
+    - m_Name: Canva
+      m_Hash: 460467318
+      m_Sprite: {fileID: 21300000, guid: fa8bc5a97cf96bc469244d19e03908f7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: fa8bc5a97cf96bc469244d19e03908f7, type: 3}
+    - m_Name: https://opengameart.org/content/seamless-brick-textures-0
+      m_Hash: 241526979
+      m_Sprite: {fileID: 21300000, guid: bd4ed8328cbc67c4e8cd56fd7b49c78c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: bd4ed8328cbc67c4e8cd56fd7b49c78c, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
+  m_PrimaryLibraryGUID: 
